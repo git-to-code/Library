@@ -10,6 +10,37 @@
 
 <body>
 
+    <div class="container">
+        <h1>My Library</h1>
+
+        <div class="books-container"></div>
+
+        <div class="new-book-form">
+            <dialog>
+                <h2>Add a Book</h2>
+                <form method="dialog">
+                    <div class="input-group">
+                        <input type="text" name="title" id="title" placeholder="Title" required>
+                        <input type="text" name="author" id="author" placeholder="Author" required>
+                        <input type="number" name="number-of-pages" id="number-of-pages" min="1" step="1" max="25000"
+                            placeholder="Number of Pages" required>
+                        <fieldset>
+                            <legend>Read Status</legend>
+                            <input type="radio" name="reading-status" id="reading-status-yes" value="Read">
+                            <label for="reading-status-yes">Read</label>
+                            <input type="radio" name="reading-status" id="reading-status-no" value="Not Read" checked>
+                            <label for="reading-status-no">Not Read</label>
+                        </fieldset>
+                    </div>
+                    <div class="button-group">
+                        <button type="submit" id="add">Add New Book</button>
+                        <button type="button" autofocus id="close">Close</button>
+                    </div>
+                </form>
+            </dialog>
+            <button>Add New Book</button>
+        </div>
+    </div>
 
     <script src="index.js"></script>
 </body>
